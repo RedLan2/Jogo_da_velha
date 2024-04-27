@@ -1,8 +1,8 @@
 var jogador,vencedor = null;
 var jogadorSelecionado = document.getElementById('jogador-selecionado');
 var vencedorSelecionado = document.getElementById('vencedor-selecionado');
-
-
+let trilho=document.getElementById('trilho')
+let body = document.querySelector('body')
 mudarJogador('X');
 function escolher_Quadrado(id){
     console.log(id);
@@ -120,4 +120,11 @@ function checarSequencia(quadrado1, quadrado2, quadrado3){
         }
         return ganhador;
 }
+
+trilho.addEventListener('click',()=>{
+    trilho.classList.toggle('dark')
+    body.classList.toggle('dark')
+})
+
+
 

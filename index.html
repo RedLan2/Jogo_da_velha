@@ -30,34 +30,34 @@
             <div id="9" class="quadrado" onclick="escolher_Quadrado(this.id)">-</div>
         </div>
         <div class="Jogador">
-            <label>
+            <label  class="dark">
                 Jogador
             </label>
-            <label  id="jogador-selecionado">
+            <label class="dark" id="jogador-selecionado">
 
             </label>
         </div>
         
         <div class="Vencedor">
-            <label>
+            <label class="dark">
                 Vencedor
             </label>
-            <label  id="vencedor-selecionado">
+            <label  class="dark" id="vencedor-selecionado">
 
             </label>
         </div>
         
         <div>
+
             <button onclick="reiniciar()">
                 Reiniciar
             </button>
         </div>
-        <label>
-            <div class="trilho">
-                <div></div>
-              </div>
+       
+       <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+        </div>
 
-    </label>
     </body>
 
     <script src="velha.js"></script>

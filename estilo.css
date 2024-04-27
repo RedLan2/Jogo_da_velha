@@ -2,6 +2,13 @@
 body {
     text-align: center;
    background-color: black;
+   transition: .7s;
+}
+body.dark{
+    background-color: #eee;
+}
+body.dark h1{
+    color: black;
 }
 h1{
     color: #eee;
@@ -18,20 +25,39 @@ h1{
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
+    border-radius:10px ;
+}
+.quadrado.dark{
+    text-align: center;
+    width: 50px;
+    background: rgb(147, 135, 135);
+    display: inline-block;
+    padding: 48px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius:10px ;
 }
 button{
+    color: black;
     margin-top: 10px;
     width: 100px;
     height: 30px;
-    background: #eee;
+    background-color:white;
     cursor: pointer;
+    border-radius: 10px;
+    border:none;
+}
+body.dark button{ 
+    color: white;
+    background-color: rgb(147, 135, 135);
 }
 .mudar_fundo{
     opacity: 0;
     position: absolute;
 }
-.label{
-    background-color: black;
+label{
+    color: white;
     border-radius: 50px;
     cursor: pointer;
     margin-top: 10px;
@@ -39,11 +65,38 @@ button{
     height: 30px;
     justify-content: space-between;
 }
-.trilho{
-    display:flex;
+body.dark label{
+    color: black;
+}
+
+
+.trilho {
+    display: inline-block;
     margin-top: 10px;
-    width: 100px;
+    width: 75px;
     height: 30px;
     background-color: white;
     cursor: pointer;
+    border-radius: 125px;
+  
+}
+.trilho .indicador{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 711px;
+    transition: .7s;
+}
+.trilho.dark{
+    background-color: #969595;
+    transition: .7s;
+}
+
+.trilho.dark .indicador{
+left: 757px;
+background-color: white;
+transition: .7s;
 }
