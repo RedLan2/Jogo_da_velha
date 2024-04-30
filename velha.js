@@ -107,6 +107,7 @@ function reiniciar(){
         quadrado.style.background = '#eee';
         quadrado.style.color = '#000';
         quadrado.innerHTML = '-';
+        quadrado.style.background = '';
     }
     mudarJogador('X');
 }
